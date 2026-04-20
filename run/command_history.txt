@@ -1,0 +1,7 @@
+/locate biome minecraft:cherry_grove
+/tp @s 1171 204 1133
+/kill
+/locate structure minecraft:mineshaft
+/locate structure mineshaft
+/tp @s 672 ~ 192
+/kill

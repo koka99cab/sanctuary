@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.koka.sanctuary.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "WorldCreatorMixin",
+    "WorldPresetsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

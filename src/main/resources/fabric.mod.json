@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "sanctuary",
+  "version": "${version}",
+  "name": "Sanctuary",
+  "description": "Adds a Sanctuary world preset with a floating-island overworld and a handcrafted survival starting zone.",
+  "authors": [
+    "koka"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.koka.sanctuary.SanctuaryMod"
+    ],
+    "client": [
+      "com.koka.sanctuary.client.SanctuaryClient"
+    ]
+  },
+  "mixins": [
+    "sanctuary.mixins.json",
+    "sanctuary.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

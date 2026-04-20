@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.koka.sanctuary.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "StructureMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

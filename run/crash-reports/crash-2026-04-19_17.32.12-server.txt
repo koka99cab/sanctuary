@@ -1,0 +1,101 @@
+---- Minecraft Crash Report ----
+// Don't be sad. I'll do better next time, I promise!
+
+Time: 2026-04-19 17:32:12
+Description: Exception in server tick loop
+
+java.lang.IllegalStateException: Failed to initialize server
+	at knot//net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:793)
+	at knot//net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:301)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.11
+	Minecraft Version ID: 1.21.11
+	Operating System: Linux (amd64) version 6.17.0-20-generic
+	Java Version: 21.0.10, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 257118592 bytes (245 MiB) / 545259520 bytes (520 MiB) up to 8392802304 bytes (8004 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 3700X 8-Core Processor
+	Identifier: AuthenticAMD Family 23 Model 113 Stepping 0
+	Microarchitecture: Zen 2
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: Navi 48 [Radeon RX 9070/9070 XT/9070 GRE]
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. [AMD/ATI] (0x1002)
+	Graphics card #0 VRAM (MiB): 16640.00
+	Graphics card #0 deviceId: 0x7550
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 18054.66
+	Virtual memory used (MiB): 13684.89
+	Swap memory total (MiB): 2048.00
+	Swap memory used (MiB): 42.03
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 3180.36, total: 3201.33
+	Space in storage for workdir (MiB): available: 1537463.63, total: 1876180.25
+	JVM Flags: 0 total; 
+	Debug Flags: 0 total; 
+	Fabric Mods: 
+		fabric-api: Fabric API 0.141.3+1.21.11
+		fabric-api-base: Fabric API Base 1.0.5+4ebb5c083e
+		fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.114+20dc27073e
+		fabric-biome-api-v1: Fabric Biome API (v1) 17.1.1+4fc5413f3e
+		fabric-block-api-v1: Fabric Block API (v1) 1.1.10+4ebb5c083e
+		fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.39+4ebb5c083e
+		fabric-command-api-v2: Fabric Command API (v2) 2.4.7+6b42a6003e
+		fabric-content-registries-v0: Fabric Content Registries (v0) 10.2.14+4fc5413f3e
+		fabric-convention-tags-v1: Fabric Convention Tags 2.1.55+7f945d5b3e
+		fabric-convention-tags-v2: Fabric Convention Tags (v2) 2.17.3+8ef948ba3e
+		fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.3.23+4ebb5c083e
+		fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.8.47+eed0806f3e
+		fabric-data-generation-api-v1: Fabric Data Generation API (v1) 23.4.0+69974c4e3e
+		fabric-dimensions-v1: Fabric Dimensions API (v1) 4.0.28+4fc5413f3e
+		fabric-entity-events-v1: Fabric Entity Events (v1) 3.1.1+1d0ab4303e
+		fabric-events-interaction-v0: Fabric Events Interaction (v0) 4.1.0+3b89ecf63e
+		fabric-game-rule-api-v1: Fabric Game Rule API (v1) 2.0.3+4fc5413f3e
+		fabric-gametest-api-v1: Fabric Game Test API (v1) 3.1.27+4fc5413f3e
+		fabric-item-api-v1: Fabric Item API (v1) 11.5.20+d0c46b9e3e
+		fabric-item-group-api-v1: Fabric Item Group API (v1) 4.2.36+4fc5413f3e
+		fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.6.15+4ebb5c083e
+		fabric-loot-api-v2: Fabric Loot API (v2) 3.0.73+3f89f5a53e
+		fabric-loot-api-v3: Fabric Loot API (v3) 2.0.20+78c8b4663e
+		fabric-message-api-v1: Fabric Message API (v1) 6.1.12+4ebb5c083e
+		fabric-networking-api-v1: Fabric Networking API (v1) 5.1.5+ae1e07683e
+		fabric-object-builder-api-v1: Fabric Object Builder API (v1) 21.1.39+4fc5413f3e
+		fabric-particles-v1: Fabric Particles (v1) 4.2.11+4fc5413f3e
+		fabric-recipe-api-v1: Fabric Recipe API (v1) 8.2.3+4ebb5c083e
+		fabric-registry-sync-v0: Fabric Registry Sync (v0) 6.2.5+1718722b3e
+		fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.1.43+4ebb5c083e
+		fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 5.0.35+4fc5413f3e
+		fabric-resource-loader-v0: Fabric Resource Loader (v0) 3.3.4+4fc5413f3e
+		fabric-resource-loader-v1: Fabric Resource Loader (v1) 1.0.10+78c8b4663e
+		fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.161+4fc5413f3e
+		fabric-serialization-api-v1: Fabric Serialization API (v1) 1.0.5+4ebb5c083e
+		fabric-tag-api-v1: Fabric Tag API (v1) 1.2.20+4fc5413f3e
+		fabric-transfer-api-v1: Fabric Transfer API (v1) 6.0.25+4fc5413f3e
+		fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 7.1.0+014c8cec3e
+		fabricloader: Fabric Loader 0.19.1
+		java: OpenJDK 64-Bit Server VM 21
+		minecraft: Minecraft 1.21.11
+		mixinextras: MixinExtras 0.5.3
+		sanctuary: Sanctuary 0.1.0
+	Server Running: true
+	Active Data Packs: vanilla, fabric-convention-tags-v2, fabric-gametest-api-v1, sanctuary
+	Available Data Packs: fabric-convention-tags-v2, fabric-gametest-api-v1, minecart_improvements, redstone_experiments, sanctuary, trade_rebalance, vanilla
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: 9001375619185365192
+	Suppressed Exceptions: ~~NONE~~
+	Is Modded: Definitely; Server brand changed to 'fabric'
+	Type: Dedicated Server (map_server.txt)

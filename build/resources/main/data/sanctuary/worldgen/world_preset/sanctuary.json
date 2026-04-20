@@ -1,0 +1,51 @@
+{
+  "dimensions": {
+    "minecraft:overworld": {
+      "type": "minecraft:overworld",
+      "generator": {
+        "type": "minecraft:noise",
+        "biome_source": {
+          "type": "sanctuary:sanctuary_biome_source",
+          "fallback": "minecraft:overworld",
+          "meadow": "minecraft:meadow",
+          "birch_forest": "minecraft:birch_forest",
+          "forest": "minecraft:forest",
+          "flower_forest": "minecraft:flower_forest",
+          "sunflower_plains": "minecraft:sunflower_plains",
+          "windswept_hills": "minecraft:windswept_hills",
+          "options": {
+            "starter_biome": "minecraft:meadow",
+            "sanctuary_zone_scale": 1.0,
+            "starter_island_scale": 1.0,
+            "archipelago_size": 1.0,
+            "archipelago_spacing": 0.0,
+            "vanilla_floating_islands_start_radius": 768
+          },
+          "fallback_scale": 0.42
+        },
+        "settings": "sanctuary:sanctuary_overworld"
+      }
+    },
+    "minecraft:the_end": {
+      "type": "minecraft:the_end",
+      "generator": {
+        "type": "minecraft:noise",
+        "biome_source": {
+          "type": "minecraft:the_end"
+        },
+        "settings": "minecraft:end"
+      }
+    },
+    "minecraft:the_nether": {
+      "type": "minecraft:the_nether",
+      "generator": {
+        "type": "minecraft:noise",
+        "biome_source": {
+          "type": "minecraft:multi_noise",
+          "preset": "minecraft:nether"
+        },
+        "settings": "minecraft:nether"
+      }
+    }
+  }
+}
